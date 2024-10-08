@@ -1,0 +1,181 @@
+body  {
+    background-color : #f5f5f5;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* no underline on links */
+  a, a:hover, a:focus, a:visited {
+    text-decoration: none !important;
+}
+
+a:visited  {
+    color: inherit;
+}
+
+.a-main-text  {
+    color: #444;
+}
+
+ /* content div */
+.content  {
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0px 10px 10px grey;
+}
+
+
+/* intro div */
+.intro  {
+    background-color:  #22c0e8;
+    color: #fff;
+    padding-top: 5px;
+    text-shadow: 0 0 2px #444;
+    -webkit-font-smoothing: antialiased;
+    box-shadow: 0px 10px 10px grey;
+}
+
+/* job title in intro section */
+.intro-title  {
+    font-style: italic;
+}
+
+/* contact list in intro section */
+.contact-list  {
+    background-color: #22c0e8;
+    color: #fff;
+    border: none;
+}
+    /* contact list link colour */
+    .contact-list a:link  {
+        color: #fff;
+    }
+
+
+/* section title */
+.section-title  {
+    color: #444;
+    font-stretch: ultra-expanded;
+
+}
+
+/* work experience section */
+    /* job title */
+    h6.job-description  {
+        color: #444;
+        margin: 0px;
+    }
+    /* job date */
+    span.job-date  {
+        color: #444;
+        font-size: 0.8em;
+    }
+    /* job employer */
+    a.job-employer  {
+        color: #22c0e8;
+        font-weight: bold;
+    }
+    /* job location */
+    a.job-location  {
+        color: #22c0e8;
+        font-size: 0.9em;
+    }
+
+    /*  blue colour on the word remote */
+.blue  {
+    color: #22c0e8;
+}
+   
+
+/* timeline styling */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+    ul.timeline:before {
+        content: ' ';
+        background: #22c0e8;
+        display: inline-block;
+        position: absolute;
+        left: 29px;
+        width: 2px;
+        height: 100%;
+        z-index: 400;
+    }
+    ul.timeline > li {
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+    ul.timeline > li:before {
+        content: ' ';
+        background: white;
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        border: 3px solid #22c0e8;
+        left: 20px;
+        width: 20px;
+        height: 20px;
+        z-index: 400;
+    }
+
+/* progress bar for skills section */
+.custom-bar  {
+    height: 5px;
+}
+.custom-progress  {
+    height: 100%;
+    background: #22c0e8;
+}
+
+/* badge for skills section */
+.badge-skills  {
+    background: #f5f5f5;
+    border-style: solid;
+    border-color: #444;
+    color: #444;
+}
+
+/* education section */
+h6.education-title  {
+    color: #22c0e8;
+    margin: 0px;
+}
+
+.education-institue  {
+    color: #444;
+}
+
+.education-date  {
+    font-weight: italic;
+    color: grey;
+}
+
+
+/* reference section quote */
+.quote-icon  {
+    background: #22c0e8;
+    color: #fff;
+    padding: 3px;
+}
+
+.quote  {
+    border: none;
+}
+
+/* spock hand in Interests section */
+.spock  {
+    color: rgb(241, 219, 12);
+}
+
+/* guitar in Interests section */
+.guitar  {
+    color: red;
+}
+/*  hide reference section */
+.hide  {
+    display: none;
+}
