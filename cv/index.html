@@ -1,127 +1,169 @@
-i/* General */
-body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raf Gemmail – CV</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="one-pager.css">
+</head>
+<body class="container py-4">
 
-/* Header */
-header h1 {
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #1a1a1a;
-  margin-bottom: 0.25rem;
-}
+  <!-- Header -->
+  <header class="mb-5 text-center">
+    <h1>Raf Gemmail</h1>
+    <p class="lead">Lean Engineering Leader – Hands-on, High-Performance Systems</p>
+    <p>
+      <a href="mailto:raf@dreamthought.com">raf@dreamthought.com</a> | 
+      <a href="https://www.linkedin.com/in/rafiqgemmail">LinkedIn</a> | 
+      <a href="https://github.com/fiq">GitHub</a> | 
+      <a href="https://www.dreamthought.com/">Personal Site</a>
+    </p>
+    <p class="text-muted">British & New Zealand Citizen • North Auckland, NZ</p>
+  </header>
 
-header p.lead {
-  font-size: 1.25rem;
-  color: #555;
-  margin-bottom: 0.5rem;
-}
-
-header a {
-  color: #22c0e8;
-  text-decoration: none;
-  margin: 0 0.25rem;
-}
-
-header a:hover {
-  text-decoration: underline;
-}
-
-header p.text-muted {
-  font-size: 0.9rem;
-}
-
-/* Section titles */
-.section-title {
-  font-size: 1.5rem;
-  font-weight: 600;
-  border-bottom: 2px solid #22c0e8;
-  padding-bottom: 0.25rem;
-  margin-bottom: 1rem;
-  color: #1a1a1a;
-}
-
-/* Timeline */
-.timeline {
-  border-left: 3px solid #22c0e8;
-  margin-left: 1rem;
-  padding-left: 1.5rem;
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 2rem;
-  padding-left: 0.5rem;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -1.35rem;
-  top: 0.3rem;
-  width: 1rem;
-  height: 1rem;
-  background-color: #fff;
-  border: 3px solid #22c0e8;
-  border-radius: 50%;
-}
-
-/* Skills list */
-ul.row li {
-  margin-bottom: 0.75rem;
-}
-
-/* Links in lists */
-ul li a {
-  color: #22c0e8;
-  text-decoration: none;
-}
-
-ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Optional: tighten list spacing in see-me columns */
-.see-me ul {
-  padding-left: 1rem; /* keeps bullets aligned */
-  margin-bottom: 0;   /* remove extra spacing after list */
-}
-
-.see-me ul li {
-  margin-bottom: 0.25rem; /* tighter vertical spacing */
-  line-height: 1.3;       /* compact line height */
-  font-size: 0.95rem;     /* slightly smaller text if desired */
-}
-
-/* Optional: smaller section title for these sub-sections */
-.see-me .section-title {
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-}
+  <!-- Summary -->
+  <section class="mb-5">
+    <h2 class="section-title">Summary</h2>
+    <p>
+      Transformational technology leader with a track record scaling webscale platforms and video systems. 
+      Known for staying deeply <strong>hands-on</strong> even while leading large teams—reviewing code, building POCs, 
+      and creating data analysis tools—while driving product-focused engineering cultures. 
+      Early engineer (#4) at <strong>Booking.com</strong>, with career highlights at the <strong>BBC iPlayer</strong> 
+      and <strong>Morgan Stanley</strong>, as well as <strong>Stuff.co.nz</strong> where I led Brightcove video integration and transcoding initiatives. Currently leading a division at massive scale in Martech.
+    </p>
+    <p>
+      Regular <strong>InfoQ</strong> contributor and podcaster, conference speaker, and DevOps community organiser. 
+      An avid <strong>NixOS</strong> user, passionate about high-performance engineering, cost optimisation, and developer experience.
+    </p>
+  </section>
 
 
+	<div class="row mb-4">
+		<!-- Column 1: InfoQ Profile & Podcasts -->
+		<div class="col-md-6 see-me">
+			<h6 class="section-title">See Me Here</h6>
+			<p>A sample of public content from community contributions and my <a href="https://www.infoq.com/author/Rafiq-Gemmail" target="_blank">InfoQ passion-work</a>:</p>
+			<ul class="mb-0">
+				<li>Annual InfoQ Culture & Methods Podcasts: 
+					<a href="https://www.infoq.com/podcasts/engineering-culture-trends-report-2022/" target="_blank">2022</a>, 
+					<a href="https://www.infoq.com/podcasts/culture-trends-2023/" target="_blank">2023</a>, 
+					<a href="https://www.infoq.com/podcasts/infoq-culture-trends-2024/" target="_blank">2024</a> and 
+					<a href="https://www.infoq.com/podcasts/infoq-culture-trends-2025/" target="_blank">2025</a>
+				</li>
+			</ul>
+		</div>
 
-/* Print styling */
-@media print {
-  body {
-    background: #fff;
-    color: #000;
-  }
-  a {
-    color: #22c0e8;
-    text-decoration: underline;
-  }
-  .timeline {
-    border-left: 3px solid #22c0e8;
-  }
-  .timeline-item::before {
-    background-color: #fff;
-    border: 3px solid #22c0e8;
-  }
-}
+		<!-- Column 2: Talks & Case Studies -->
+		<div class="col-md-6 see-me">
+			<h6 class="section-title">Selection of Talks & Case Studies</h6>
+			<ul class="mb-0">
+				<li><a href="https://www.youtube.com/watch?v=UFMv2HmGNdE" target="_blank">On growing junior developers – NZ JS</a></li>
+				<li><a href="https://www.youtube.com/watch?v=W7Z-Upj6f4w" target="_blank">On coaching ensemble/mob/pair programming – NZ JS</a></li>
+				<li><a href="https://www.infoq.com/presentations/bbc-agile-case-study/" target="_blank">On addressing technical debt at the BBC – QCon, London</a></li>
+				<!--li>Delivered a <a href="https://web.archive.org/web/20201001091455/https://techweek.co.nz/whats-on/2020/agile-workshop-974/" target="_blank">Containerisation Workshop</a> for Dunedin Techweek</li-->
+				<li>Organised <a href="https://www.infoq.com/bringing-the-future-forward/" target="_blank">a remote conference to support folks during early lockdowns</a></li>
+				<li>Helped organise New Zealand's DevOps Days</li>
+			</ul>
+		</div>
+	</div>
+
+
+<!--
+
+  <section class="mb-5">
+    <h2 class="section-title">Community & Publications</h2>
+    <ul>
+      <li>
+        Annual InfoQ Culture & Methods podcasts:
+        <ul>
+          <li><a href="https://www.infoq.com/podcasts/engineering-culture-trends-report-2022/">2022</a></li>
+          <li><a href="https://www.infoq.com/podcasts/culture-trends-2023/">2023</a></li>
+          <li><a href="https://www.infoq.com/podcasts/infoq-culture-trends-2024/">2024</a></li>
+          <li><a href="https://www.infoq.com/podcasts/infoq-culture-trends-2025/">2025</a></li>
+        </ul>
+      </li>
+      <li><a href="https://www.infoq.com/profile/Rafiq-Gemmail">InfoQ Profile</a></li>
+      <li><a href="https://www.infoq.com/author/Rafiq-Gemmail">InfoQ Author Page</a></li>
+      <li><a href="https://www.infoq.com/presentations/bbc-agile-case-study/">On addressing technical debt at the BBC – QCon, London</a></li>
+      <li><a href="https://www.infoq.com/bringing-the-future-forward/">A remote conference supporting early-career engineers</a></li>
+      <li>Talks on growing developers, ensemble programming, and addressing technical debt (QCon, NZ JS)</li>
+      <li>Workshops & events: Containerisation (Techweek), DevOps Days NZ, remote conferences</li>
+    </ul>
+  </section>
+/-->
+
+  <!-- Experience -->
+  <section>
+    <h2 class="section-title">Featured Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h4>Senior Director of Engineering – Marigold Loyalty</h4>
+        <p class="text-muted">Mar 2025 – Present | Global Remote from NZ</p>
+        <p>Leading ~40 off-shore engineers building the global leader in loyalty systems, integrated into POS and ecommerce at scale. Hands-on in incidents, swarming critical issues, prototyping AI/automation, and evolving engineering culture.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Director of Engineering (Platform Capabilities) – Marigold Sailthru</h4>
+        <p class="text-muted">Jul 2024 – Mar 2025 | Remote</p>
+        <p>Promoted to oversee leaders across UI, Mobile Push, Data, and Platform Engineering. Introduced mentoring circles, guilds, and a hybrid ShapeUp/Big Room Planning model. Championed product-focused engineering and high-performance culture.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Engineering Manager – Marigold Sailthru</h4>
+        <p class="text-muted">Jul 2022 – Jul 2024 | Remote</p>
+        <p>Owned platform and mobile reliability delivering billions of messages per month. Participated in on-call, reviewed code, and drove improvements in DevEx and architecture alignment.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Head of Technology (promoted from Head of Product) – Developers Institute</h4>
+        <p class="text-muted">Nov 2020 – Jul 2022 | Remote</p>
+        <p>Scaled remote learning platform from single digits to hundreds of learners. Built and shipped a secure cloud-native SaaS. Hands-on with Python/AWS development.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Technical Coach & Lead – Stuff.co.nz</h4>
+        <p class="text-muted">2015 – 2018 | Wellington, NZ</p>
+        <p>Hands-on leader of video platform initiatives including Brightcove integration and transcoding systems. Delivered high-performance news platform features using microservices and continuous delivery.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Senior Software Engineer – BBC iPlayer</h4>
+        <p class="text-muted">2009– 2013 | London, UK</p>
+        <p>Delivered and optimised services for video renditions, programme metadata, and integrations at massive scale. Migrated legacy Perl services to high-performance Java/Spring microservices. Worked closely with transcoding teams.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Software Engineer – Booking.com</h4>
+        <p class="text-muted">2002 – 2003 | Amsterdam, NL</p>
+        <p>Developer #4 and first commit. Refactored core system for scalability and maintainability, setting foundations for Booking.com’s hypergrowth.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Other Roles</h4>
+        <p class="text-muted">2000 – 2020</p>
+        <p>
+          Engineering leadership and individual contributor roles across ING, Morgan Stanley, Santander, VisionOSS, Trinity Mirror, Assurity Consulting, NZTA, MPorium, BNZ, Catalyst IT, OpenClassrooms.  
+          Focused on <strong>high-performance systems at scale</strong>, applying <strong>lean methods</strong> and <strong>fast feedback loops</strong> to deliver reliable, maintainable and maintainable software. Deep experience of customer-centric build-it/ship-it/own-it cultures.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="mt-5 mb-5">
+    <h2 class="section-title">Skills</h2>
+    <ul class="row">
+      <li class="col-md-6"><strong>Leadership:</strong> Coaching, Lean, Agile, XP, DevOps, FinOps</li>
+      <li class="col-md-6"><strong>Languages:</strong> Java, Node.js, Scala, Ruby, Python, Go, Perl</li>
+      <li class="col-md-6"><strong>Frameworks:</strong> Spring Boot, React, GraphQL, Spark, Camel</li>
+      <li class="col-md-6"><strong>Platforms/Ops:</strong> AWS, Kubernetes, ECS/EKS, Terraform, Kafka</li>
+      <li class="col-md-6"><strong>Datastores:</strong> PostgreSQL, Elastic, MongoDB, Databricks</li>
+      <li class="col-md-6"><strong>Other:</strong> Video transcoding interest, NixOS enthusiast</li>
+    </ul>
+  </section>
+
+</body>
+</html>
+
 
