@@ -269,5 +269,33 @@ h6.education-title { color: #22c0e8; margin: 0 0 6px 0; }
 /* Accessibility / small tweaks */
 a[rel="noopener"] { outline: none; }
 
+@media (max-width: 550px) {
+  .profile-img {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+    max-width: 130px !important;
+    height: auto !important;
+  }
+  .intro-title, .intro-why {
+    font-size: 1rem !important;
+    padding-left: .3rem !important;
+    padding-right: .3rem !important;
+  }
+  .header-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  body {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 9px !important;
+    width: auto !important; 
+    margin: 0 auto;
+  } 
+}
+
+
 /* END OF FILE ---------------------------------------------------- */
 
