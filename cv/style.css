@@ -68,6 +68,26 @@ body  {
     font-size: 0.8rem;
 }
 
+/* Badge / link tweaks in See Me Here */
+.see-me ul {
+    padding-left: 1rem; /* indent list nicely */
+    margin-top: 0.5rem;
+}
+.see-me li {
+    margin-bottom: 0.5rem; /* space between items */
+}
+.see-me li a {
+    font-weight: 500;
+}
+.see-me b {
+    font-weight: bold;
+}
+.see-me .badge a {
+    text-decoration: none !important;
+    color: #22c0e8; /* match your link color */
+}
+
+
 
 /* no underline on links */
 a, a:hover, a:focus, a:visited {
@@ -158,32 +178,32 @@ ul.timeline {
     list-style-type: none;
     position: relative;
 }
-    ul.timeline:before {
-        content: ' ';
-        background: #22c0e8;
-        display: inline-block;
-        position: absolute;
-        left: 10px;
-        width: 2px;
-        height: 100%;
-        z-index: 400;
-    }
-    ul.timeline > li {
-        margin: 2px 0;
-        padding-left: 10px;
-    }
-    ul.timeline > li:before {
-        content: ' ';
-        background: white;
-        display: inline-block;
-        position: absolute;
-        border-radius: 50%;
-        border: 3px solid #22c0e8;
-        left: 1px;
-        width: 20px;
-        height: 20px;
-        z-index: 400;
-    }
+ul.timeline:before {
+    content: ' ';
+    background: #22c0e8;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 2px 0;
+    padding-left: 10px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 1px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
 
 /* progress bar for skills section */
 .custom-bar  {
@@ -243,3 +263,55 @@ h6.education-title  {
 .hide  {
     display: none;
 }
+
+/** latest **/
+
+/* reduce top/bottom margins for content blocks when printing */
+@media print {
+  .content { padding: 8px; box-shadow: none; }
+  .intro-why { color: #fff; opacity: 1; }
+  li.job-block::before {
+    page-break-inside: avoid;
+    height: 100%;
+  }
+}
+
+/ ---------- CV delta styles (add to style.css) ---------- */*
+
+
+/* profile image sizing (no inline styles) */
+.profile-img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* spacing tweaks for the intro */
+.intro .info-left, .intro .info-right {
+    padding: 0.25rem 0.5rem;
+}
+
+/* small spacing between header badges */
+.header-content .badge {
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.78rem;
+}
+
+/* make the intro 'why' paragraph subtle yet readable */
+.intro-why {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #f3f8fb;
+    opacity: 0.95;
+    line-height: 1.15;
+}
+
+/* tech-line styling already referenced but keep consistent */
+.tech-line { font-style: italic; font-size: 0.85rem; margin-top: 6px; color: #666; }
+
+/* avoid page breaks inside job blocks */
+.job-block { page-break-inside: avoid; margin-bottom: 8px; }
+
