@@ -1,317 +1,280 @@
+/* ------------------------------------------------------------------
+   Raf Gemmail — CV style.css
+*/
+
+/* PAGE / PRINT BASE ------------------------------------------------ */
 @page {
-    size: A4;
-    margin: 0;
+  size: A4;
+  margin: 0;
 }
 
+/* Print resets and niceties */
 @media print {
-    html, body {
-        width: 210mm;
-        height: 297mm;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    
-    .container-fluid {
-        max-width: 210mm !important;
-        margin: 0 auto !important;
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
-    
-    .intro {
-        page-break-after: avoid;
-        margin: 0 auto 10px auto !important;
-        max-width: 100% !important;
-    }
-    
-    .content {
-        box-shadow: none !important;
-        margin: 0 auto 15px auto !important;
-        max-width: 100% !important;
-    }
-    
-    a:not(.header-content a) {
-        color: #22c0e8 !important;
-    }
-    
-    .header-content a {
-        color: #fff !important;
-    }
-}
-
-body  {
-    background-color : #f5f5f5;
-    color: #444;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    overflow-x: hidden;
-    position: relative;
+  html, body {
     width: 210mm;
-    margin: 0 auto;
-}
+    height: 297mm;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact; /* try to ensure colours print */
+    color-adjust: exact;
+  }
 
+  /* Limit container width for printing, keep padding for gutters */
+  .container-fluid {
+    max-width: 210mm !important;
+    margin: 0 auto !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
 
-.header-content a, .header-content a:hover, .header-content a:focus, .header-content a:visited {
-    text-decoration: none !important;
-    color: #fff !important;
-    font-weight: bold;
-}
+  /* Reduce decoration that causes layout variance in print */
+  .intro, .content {
+    box-shadow: none !important;
+    margin: 0 0 8px 0 !important;
+    padding: 8px !important;
+  }
 
-/* no underline on links */
-.see-me a, .see-me a:hover, .see-me a:focus, .see-me a:visited {
-    text-decoration: none !important;
-    color: #22c0e8;
-    font-weight: 500;
-}
+  /* Make sure the timeline line continues across pages (border-based approach) */
+  ul.timeline {
+    border-left: 2px solid #22c0e8 !important;
+    padding-left: 22px !important;
+    margin-left: 0 !important;
+  }
 
-.see-me {
-    font-size: 0.8rem;
-}
+  /* Do not force full-page pseudo-element heights in print */
+  ul.timeline:before,
+  ul.timeline > li:before { 
+    display: none !important;
+  }
 
-/* Badge / link tweaks in See Me Here */
-.see-me ul {
-    padding-left: 1rem; /* indent list nicely */
-    margin-top: 0.5rem;
-}
-.see-me li {
-    margin-bottom: 0.5rem; /* space between items */
-}
-.see-me li a {
-    font-weight: 500;
-}
-.see-me b {
-    font-weight: bold;
-}
-.see-me .badge a {
-    text-decoration: none !important;
-    color: #22c0e8; /* match your link color */
-}
+  /* Keep each job block together (but only job blocks) */
+  .job-block {
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
 
+  /* Prevent floats from pushing content onto a fresh page in print */
+  span.job-date {
+    float: none !important;
+    display: block !important;
+    text-align: right !important;
+    margin-top: .25rem !important;
+  }
 
-
-/* no underline on links */
-a, a:hover, a:focus, a:visited {
-    text-decoration: none !important;
-    color: #22c0e8;
-    font-weight: bold;
-}
-
-
-.a-main-text  {
-    color: #444;
-}
-
- /* content div */
-.content  {
-    background-color: #fff;
-    padding: 10px;
-    box-shadow: 0px 10px 10px grey;
-}
-
-
-/* intro div */
-.intro  {
-    background-color:  #22c0e8;
-    color: #fff;
-    padding-top: 5px;
-    text-shadow: 0 0 2px #444;
-    -webkit-font-smoothing: antialiased;
-    box-shadow: 0px 10px 10px grey;
-}
-
-/* job title in intro section */
-.intro-title  {
-    font-style: italic;
-    font-weight: bold;;
-}
-
-/* contact list in intro section */
-.contact-list  {
-    background-color: #22c0e8;
-    color: #fff;
-    border: none;
-}
-    /* contact list link colour */
-    .contact-list a:link  {
-        color: #fff;
-    }
-
-
-/* section title */
-.section-title  {
-    color: #444;
-    font-stretch: ultra-expanded;
-
-}
-
-/* work experience section */
-    /* job title */
-    .job-description  {
-        color: #444;
-        margin: 0px;
-        left: 0px;
-    }
-    /* job date */
-    span.job-date  {
-        color: #444;
-        font-size: 0.8em;
-    }
-    /* job employer */
-    a.job-employer  {
-        color: #22c0e8;
-        font-weight: bold;
-    }
-    /* job location */
-    a.job-location  {
-        color: #22c0e8;
-        font-size: 0.9em;
-    }
-
-    /*  blue colour on the word remote */
-.blue  {
-    color: #22c0e8;
-}
-   
-
-/* timeline styling */
-ul.timeline {
-    list-style-type: none;
-    position: relative;
-}
-ul.timeline:before {
-    content: ' ';
-    background: #22c0e8;
-    display: inline-block;
-    position: absolute;
-    left: 10px;
-    width: 2px;
-    height: 100%;
-    z-index: 400;
-}
-ul.timeline > li {
-    margin: 2px 0;
-    padding-left: 10px;
-}
-ul.timeline > li:before {
-    content: ' ';
-    background: white;
-    display: inline-block;
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid #22c0e8;
-    left: 1px;
-    width: 20px;
-    height: 20px;
-    z-index: 400;
-}
-
-/* progress bar for skills section */
-.custom-bar  {
-    height: 5px;
-}
-.custom-progress  {
-    height: 100%;
-    background: #22c0e8;
-}
-
-/* badge for skills section */
-.badge-skills  {
-    background: #f5f5f5;
-    border-style: solid;
-    border-color: #444;
-    color: #444;
-    margin-top: 0.15rem;
-}
-
-/* education section */
-h6.education-title  {
-    color: #22c0e8;
-    margin: 0px;
-}
-
-.education-institue  {
-    color: #444;
-}
-
-.education-date  {
-    font-weight: italic;
-    color: grey;
-}
-
-
-/* reference section quote */
-.quote-icon  {
-    background: #22c0e8;
-    color: #fff;
-    padding: 3px;
-}
-
-.quote  {
-    border: none;
-}
-
-/* spock hand in Interests section */
-.spock  {
-    color: rgb(241, 219, 12);
-}
-
-/* guitar in Interests section */
-.guitar  {
-    color: red;
-}
-/*  hide reference section */
-.hide  {
-    display: none;
-}
-
-/** latest **/
-
-/* reduce top/bottom margins for content blocks when printing */
-@media print {
-  .content { padding: 8px; box-shadow: none; }
-  .intro-why { color: #fff; opacity: 1; }
-  li.job-block::before {
+  /* Avoid forcing big page-break-avoid rules on columns/rows (can create blank pages) */
+  .row, .col, .see-me {
     page-break-inside: avoid;
-    height: 100%;
+    break-inside: avoid;
+  }
+
+  /* reduce list spacing so content packs nicely in print */
+  .see-me ul, .see-me li {
+    margin: 0 !important;
+    padding-left: 1rem !important;
   }
 }
 
-/ ---------- CV delta styles (add to style.css) ---------- */*
+/* BODY / GENERAL -------------------------------------------------- */
+body {
+  background-color : #f5f5f5;
+  color: #444;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+  position: relative;
+  width: 210mm;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+}
 
+/* HEADER / INTRO ------------------------------------------------- */
+.intro {
+  background-color: #22c0e8;
+  color: #fff;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  text-shadow: 0 0 2px rgba(0,0,0,0.25);
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.12);
+  -webkit-print-color-adjust: exact;
+}
 
-/* profile image sizing (no inline styles) */
+.header-content a, .header-content a:hover, .header-content a:focus, .header-content a:visited {
+  text-decoration: none !important;
+  color: #fff !important;
+  font-weight: bold;
+}
+
+/* Profile image (no inline sizing) */
 .profile-img {
-    width: 96px;
-    height: 96px;
-    object-fit: cover;
-    border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0.5rem;
 }
 
-/* spacing tweaks for the intro */
-.intro .info-left, .intro .info-right {
-    padding: 0.25rem 0.5rem;
+/* Intro title and why */
+.intro-title {
+  font-style: italic;
+  font-weight: 700;
+  color: #f8fbfd;
 }
 
-/* small spacing between header badges */
-.header-content .badge {
-    display: inline-block;
-    margin-bottom: 0.25rem;
-    padding: 0.25rem 0.5rem;
-    font-size: 0.78rem;
-}
-
-/* make the intro 'why' paragraph subtle yet readable */
 .intro-why {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #f3f8fb;
-    opacity: 0.95;
-    line-height: 1.15;
+  margin: 0;
+  font-size: 0.95rem;
+  color: #f3f8fb;
+  opacity: 0.95;
+  line-height: 1.15;
 }
 
-/* tech-line styling already referenced but keep consistent */
-.tech-line { font-style: italic; font-size: 0.85rem; margin-top: 6px; color: #666; }
+/* CONTACT LIST / BADGES ----------------------------------------- */
+.contact-list {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  margin-bottom: .25rem;
+  padding: 0;
+}
 
-/* avoid page breaks inside job blocks */
-.job-block { page-break-inside: avoid; margin-bottom: 8px; }
+.contact-list a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.header-content .badge {
+  display: inline-block;
+  margin-bottom: 0.25rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.78rem;
+  background: rgba(255,255,255,0.06);
+  border-radius: 3px;
+}
+
+/* LINKS --------------------------------------------------------- */
+a, a:hover, a:focus, a:visited {
+  text-decoration: none !important;
+  color: #22c0e8;
+  font-weight: 700;
+}
+
+/* SEE-ME (community block) ------------------------------------- */
+.see-me { font-size: 0.8rem; }
+.see-me ul { padding-left: 1rem; margin-top: 0.5rem; }
+.see-me li { margin-bottom: 0.5rem; }
+.see-me li a { font-weight: 500; }
+.see-me b { font-weight: 700; }
+
+/* CONTENT BOX --------------------------------------------------- */
+.content {
+  background-color: #fff;
+  padding: 12px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.12);
+  margin-bottom: 12px;
+}
+
+/* SECTION TITLES ------------------------------------------------ */
+.section-title {
+  color: #444;
+  font-stretch: ultra-expanded;
+  margin-bottom: .5rem;
+}
+
+/* EXPERIENCE / JOBS --------------------------------------------- */
+.job-description {
+  color: #444;
+  margin: 0;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+span.job-date {
+  color: #444;
+  font-size: 0.85rem;
+}
+
+/* Employer link */
+a.job-employer {
+  color: #22c0e8;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* timeline: border-left approach (replaces pseudo-element full-height) */
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+  margin-left: 0;
+  padding-left: 22px; /* gutter for the line */
+  border-left: 2px solid #22c0e8;
+}
+
+/* Each li keeps a circular marker aligned to the left border */
+ul.timeline > li {
+  margin: 8px 0 12px 0;
+  padding-left: 12px;
+  position: relative;
+}
+
+/* marker: small white circle with blue border on the line */
+ul.timeline > li::before {
+  content: "";
+  position: absolute;
+  left: -12px;            /* align over the border-left */
+  top: 6px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  border: 3px solid #22c0e8;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+/* TECH LINE ----------------------------------------------------- */
+.tech-line {
+  font-style: italic;
+  font-size: 0.85rem;
+  margin-top: 6px;
+  color: #666;
+}
+
+/* SKILLS / BADGES ------------------------------------------------ */
+.custom-bar { height: 5px; }
+.custom-progress { height: 100%; background: #22c0e8; }
+
+.badge-skills {
+  background: #f5f5f5;
+  border-style: solid;
+  border-color: #444;
+  color: #444;
+  margin-top: 0.15rem;
+}
+
+/* EDUCATION ----------------------------------------------------- */
+h6.education-title { color: #22c0e8; margin: 0 0 6px 0; }
+.education-institue { color: #444; }
+.education-date { font-weight: italic; color: grey; }
+
+/* QUOTE / REFERENCES -------------------------------------------- */
+.quote-icon { background: #22c0e8; color: #fff; padding: 3px; }
+.quote { border: none; }
+
+/* INTEREST ICONS ------------------------------------------------ */
+.spock { color: rgb(241, 219, 12); }
+.guitar { color: red; }
+
+/* PAGE-BREAKS / PRINT FRIENDLY ---------------------------------- */
+/* keep only job-blocks from breaking internally; allow natural breaks everywhere else */
+.job-block { page-break-inside: avoid; break-inside: avoid; }
+
+/* Slight spacing polish */
+.job-block + .job-block { margin-top: 6px; }
+
+/* Accessibility / small tweaks */
+a[rel="noopener"] { outline: none; }
+
+/* END OF FILE ---------------------------------------------------- */
 
