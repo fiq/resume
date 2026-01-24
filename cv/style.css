@@ -246,6 +246,20 @@ ul.timeline > li::before {
   margin-top: 0.15rem;
 }
 
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.skills-grid li {
+  margin-bottom: 0;
+}
+
 /* EDUCATION ----------------------------------------------------- */
 h6.education-title { color: #22c0e8; margin: 0 0 6px 0; }
 .education-institue { color: #444; }
