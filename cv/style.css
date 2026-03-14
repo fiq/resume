@@ -302,8 +302,6 @@ a, a:hover, a:focus, a:visited {
 /* EXPERIENCE / JOBS --------------------------------------------- */
 .role-section {
   margin-bottom: 0.85rem;
-  border-left: 3px solid rgba(34,192,232,0.28);
-  padding-left: 0.85rem;
 }
 
 .role-heading {
