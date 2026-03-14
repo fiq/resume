@@ -13,6 +13,7 @@
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
     background: #fff !important;
+    font-size: 13px;
   }
 
   /* Container width only */
@@ -26,16 +27,20 @@
   /* Remove shadows and unnecessary margins */
   .intro, .content {
     box-shadow: none;
-    margin-bottom: 4px;
+    margin-bottom: 2px;
   }
 
-  /* Timeline: keep border, remove pseudo-elements */
-  ul.timeline {
-    border-left: 2px solid #22c0e8;
-    padding-left: 18px;
+  .content {
+    padding: 8px 9px;
   }
-  ul.timeline:before,
-  ul.timeline > li:before { display: none; }
+
+  .sidebar-card {
+    padding: 7px 8px;
+  }
+
+  .role-bullets li {
+    margin-bottom: 0.16rem;
+  }
 
   /* Job blocks: avoid breaking inside */
   .job-block {
@@ -46,12 +51,86 @@
   /* Small spacing tweaks to prevent huge gaps */
   .job-block + .job-block { margin-top: 4px; }
 
-  /* Floats and dates */
-  span.job-date {
-    float: none;
-    display: block;
+  .role-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .job-date {
     text-align: right;
-    margin-top: 0.25rem;
+    white-space: nowrap;
+  }
+
+  .resume-layout {
+    display: grid;
+    grid-template-columns: 1.65fr 0.95fr;
+    gap: 10px;
+    align-items: start;
+  }
+
+  .resume-main,
+  .resume-sidebar {
+    min-width: 0;
+  }
+
+  .sidebar-card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .intro {
+    padding-top: 4px;
+    padding-bottom: 5px;
+  }
+
+  .profile-img {
+    width: 82px;
+    height: 82px;
+    margin: 0.2rem 0.45rem;
+  }
+
+  .intro-title {
+    margin-bottom: 0.3rem !important;
+    font-size: 1rem;
+    line-height: 1.15;
+  }
+
+  .intro-credibility {
+    margin: -0.2rem 0 0.3rem 0;
+    font-size: 0.8rem;
+  }
+
+  .contact-list,
+  .header-content .badge {
+    margin-bottom: 0.1rem;
+  }
+
+  .role-note,
+  .role-context,
+  .sidebar-intro,
+  .section-title {
+    margin-bottom: 0.22rem;
+  }
+
+  .sidebar-card p,
+  .sidebar-card li,
+  .sidebar-list li {
+    font-size: 0.83rem;
+    line-height: 1.25;
+  }
+
+  .job-description {
+    font-size: 0.92rem;
+  }
+
+  .job-date {
+    font-size: 0.8rem;
+  }
+
+  .education-list {
+    gap: 0.45rem;
   }
 
   /* Lists */
@@ -61,9 +140,6 @@
     padding-left: 1rem;
   }
 
-  #education {
-    break-before: always;
-  }
 }
 
 
@@ -75,7 +151,8 @@ body {
   font-size: 14px;
   overflow-x: hidden;
   position: relative;
-  width: 210mm;
+  max-width: 210mm;
+  width: 100%;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
 }
@@ -84,8 +161,8 @@ body {
 .intro {
   background-color: #22c0e8;
   color: #fff;
-  padding-top: 8px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-bottom: 8px;
   text-shadow: 0 0 2px rgba(0,0,0,0.25);
   box-shadow: 0px 10px 10px rgba(0,0,0,0.12);
   -webkit-print-color-adjust: exact;
@@ -99,12 +176,12 @@ body {
 
 /* Profile image (no inline sizing) */
 .profile-img {
-  width: 96px;
-  height: 96px;
+  width: 90px;
+  height: 90px;
   object-fit: cover;
   border-radius: 50%;
   display: block;
-  margin: 0.5rem;
+  margin: 0.35rem 0.5rem;
 }
 
 /* Intro title and why */
@@ -112,6 +189,13 @@ body {
   font-style: italic;
   font-weight: 700;
   color: #f8fbfd;
+}
+
+.intro-credibility {
+  margin: -0.2rem 0 0.45rem 0;
+  font-size: 0.86rem;
+  color: rgba(255,255,255,0.92);
+  line-height: 1.2;
 }
 
 .intro-why {
@@ -127,7 +211,7 @@ body {
   background-color: transparent;
   color: #fff;
   border: none;
-  margin-bottom: .25rem;
+  margin-bottom: .15rem;
   padding: 0;
 }
 
@@ -163,19 +247,73 @@ a, a:hover, a:focus, a:visited {
 /* CONTENT BOX --------------------------------------------------- */
 .content {
   background-color: #fff;
-  padding: 12px;
+  padding: 10px 11px;
   box-shadow: 0px 10px 10px rgba(0,0,0,0.12);
-  margin-bottom: 12px;
+  margin-bottom: 9px;
+}
+
+.resume-layout {
+  display: block;
+}
+
+.resume-main,
+.resume-sidebar {
+  min-width: 0;
+}
+
+.sidebar-card {
+  padding: 8px 10px;
+}
+
+.sidebar-card .section-title {
+  font-size: 0.92rem;
+  margin-bottom: 0.25rem;
+}
+
+.sidebar-card p,
+.sidebar-card li,
+.sidebar-list li {
+  font-size: 0.88rem;
+  line-height: 1.35;
+}
+
+.sidebar-intro {
+  margin-bottom: 0.35rem;
+}
+
+.sidebar-list {
+  margin: 0;
+}
+
+.sidebar-list li {
+  margin-bottom: 0.35rem;
 }
 
 /* SECTION TITLES ------------------------------------------------ */
 .section-title {
   color: #444;
-  font-stretch: ultra-expanded;
-  margin-bottom: .5rem;
+  font-stretch: normal;
+  font-size: 1.02rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 0.4rem;
 }
 
 /* EXPERIENCE / JOBS --------------------------------------------- */
+.role-section {
+  margin-bottom: 0.85rem;
+  border-left: 3px solid rgba(34,192,232,0.28);
+  padding-left: 0.85rem;
+}
+
+.role-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 0.25rem;
+}
+
 .job-description {
   color: #444;
   margin: 0;
@@ -183,47 +321,40 @@ a, a:hover, a:focus, a:visited {
   font-size: 0.95rem;
 }
 
-span.job-date {
+.job-date {
   color: #444;
   font-size: 0.85rem;
 }
 
-/* Employer link */
+.job-employer,
 a.job-employer {
   color: #22c0e8;
   font-weight: 700;
   text-decoration: none;
 }
 
-/* timeline: border-left approach (replaces pseudo-element full-height) */
-ul.timeline {
-  list-style-type: none;
-  position: relative;
-  margin-left: 0;
-  padding-left: 22px; /* gutter for the line */
-  border-left: 2px solid #22c0e8;
+.role-note {
+  font-size: 0.88rem;
+  color: #666;
+  margin-bottom: 0.3rem;
 }
 
-/* Each li keeps a circular marker aligned to the left border */
-ul.timeline > li {
-  margin: 8px 0 12px 0;
-  padding-left: 12px;
-  position: relative;
+.role-context {
+  margin-bottom: 0.3rem;
 }
 
-/* marker: small white circle with blue border on the line */
-ul.timeline > li::before {
-  content: "";
-  position: absolute;
-  left: -12px;            /* align over the border-left */
-  top: 6px;
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background: #fff;
-  border: 3px solid #22c0e8;
-  box-sizing: border-box;
-  z-index: 2;
+.role-bullets {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.role-bullets li {
+  margin-bottom: 0.22rem;
+}
+
+.compact-list li:last-child,
+.role-bullets li:last-child {
+  margin-bottom: 0;
 }
 
 /* TECH LINE ----------------------------------------------------- */
@@ -261,9 +392,30 @@ ul.timeline > li::before {
 }
 
 /* EDUCATION ----------------------------------------------------- */
-h6.education-title { color: #22c0e8; margin: 0 0 6px 0; }
+.education-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.75rem;
+}
+
+.education-item {
+  margin-bottom: 0.25rem;
+}
+
+#education {
+  background-color: #fafafa;
+}
+
+#education .section-title {
+  font-size: 0.94rem;
+  color: #666;
+}
+
+h3.education-title,
+h6.education-title { color: #22c0e8; margin: 0 0 4px 0; font-size: 0.9rem; }
 .education-institue { color: #444; }
-.education-date { font-weight: italic; color: grey; }
+.education-institute { color: #444; }
+.education-date { font-weight: italic; color: grey; font-size: 0.84rem; }
 
 /* QUOTE / REFERENCES -------------------------------------------- */
 .quote-icon { background: #22c0e8; color: #fff; padding: 3px; }
@@ -283,6 +435,20 @@ h6.education-title { color: #22c0e8; margin: 0 0 6px 0; }
 /* Accessibility / small tweaks */
 a[rel="noopener"] { outline: none; }
 
+@media (min-width: 992px) {
+  .resume-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(250px, 0.95fr);
+    gap: 14px;
+    align-items: start;
+  }
+
+  .resume-sidebar {
+    position: sticky;
+    top: 0.75rem;
+  }
+}
+
 @media (max-width: 550px) {
   .profile-img {
     margin-left: auto !important;
@@ -296,6 +462,11 @@ a[rel="noopener"] { outline: none; }
     padding-left: .3rem !important;
     padding-right: .3rem !important;
   }
+  .intro-credibility {
+    font-size: 0.9rem !important;
+    padding-left: .3rem !important;
+    padding-right: .3rem !important;
+  }
   .header-content {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -304,12 +475,27 @@ a[rel="noopener"] { outline: none; }
     padding-left: 0 !important;
     padding-right: 0 !important;
     font-family: 'Roboto', sans-serif !important;
-    font-size: 9px !important;
+    font-size: 14px !important;
     width: auto !important; 
     margin: 0 auto;
-  } 
+  }
+  .content {
+    padding: 10px;
+  }
+  .sidebar-card {
+    padding: 10px;
+  }
+  .role-heading {
+    display: block;
+  }
+  .job-date {
+    display: block;
+    margin-top: 0.15rem;
+  }
+  .education-list {
+    grid-template-columns: 1fr;
+  }
 }
 
 
 /* END OF FILE ---------------------------------------------------- */
-

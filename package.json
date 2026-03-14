@@ -1,0 +1,15 @@
+{
+  "name": "resume-validation",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Validation tooling for resume print layout checks",
+  "packageManager": "pnpm@10.7.0",
+  "scripts": {
+    "test": "pnpm test:print-fit",
+    "test:print-fit": "node scripts/print-fit-check.mjs",
+    "test:print-fit:docker": "docker build -t resume-print-fit . && docker run --rm -v \"$PWD:/work\" resume-print-fit"
+  },
+  "devDependencies": {
+    "playwright": "^1.52.0"
+  }
+}

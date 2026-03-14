@@ -1,0 +1,44 @@
+name: Print Fit
+
+on:
+  pull_request:
+    paths:
+      - "cv/cto.html"
+      - "cv/style.css"
+      - "resume_content_cto.md"
+      - "resume_state.md"
+      - "package.json"
+      - "scripts/**"
+      - "Dockerfile"
+      - ".github/workflows/print-fit.yml"
+  push:
+    branches:
+      - master
+      - main
+    paths:
+      - "cv/cto.html"
+      - "cv/style.css"
+      - "resume_content_cto.md"
+      - "resume_state.md"
+      - "package.json"
+      - "scripts/**"
+      - "Dockerfile"
+      - ".github/workflows/print-fit.yml"
+
+jobs:
+  print-fit:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.52.0-jammy
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable pnpm
+        run: corepack enable
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile=false
+
+      - name: Check CTO print fit
+        run: pnpm test:print-fit
