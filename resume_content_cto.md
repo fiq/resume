@@ -15,7 +15,7 @@ Engineering Leader Scaling Global SaaS Platforms and Distributed Teams
 
 # Header Credibility Line
 
-Ex-Booking.com • BBC iPlayer • Morgan Stanley
+Ex-Booking.com • BBC iPlayer • Morgan Stanley • ING • Stuff
 
 ---
 
@@ -27,6 +27,8 @@ Currently leading a 50+ engineer organisation for a global loyalty SaaS platform
 
 With almost a decade leading distributed teams, I build data-driven remote-first engineering cultures that sustain high delivery standards across time zones while pragmatically adopting AI-assisted and agentic development workflows.
 
+Earlier in my career I worked hands-on building large-scale systems for organisations including BBC iPlayer, Morgan Stanley, ING and Stuff, giving me a strong technical foundation that informs my leadership approach.
+
 ---
 
 # Engineering Leadership Focus
@@ -34,7 +36,7 @@ With almost a decade leading distributed teams, I build data-driven remote-first
 - Scaling distributed engineering teams delivering enterprise SaaS platforms used by global brands.
 - Measuring engineering productivity and identifying delivery friction to prioritise platform automation and developer experience improvements.
 - Pairing, coaching and leading adoption of AI-assisted development tools including Copilot, Cursor and Claude across engineering teams.
-- Operating at the intersection of hands-on engineering leadership, platform strategy, system design and customer-facing technical leadership.
+- Operating at the intersection of engineering leadership, platform strategy, system design and customer-facing technical leadership.
 - Leading critical production incidents and post-incident reviews, driving platform stability improvements and stronger engineering ownership.
 
 ---
@@ -88,13 +90,19 @@ Seconded as Head of Technology for sister contracting organisation **Parasol**, 
 
 # Earlier Career Highlights
 
-**Stuff (Fairfax Media)** — Technical lead helping take New Zealand’s largest news site toward microservices and container-based architecture; introduced technology radar practices.
+**Stuff (Fairfax Media)** — Technical lead helping take New Zealand’s largest news site toward microservices and container-based architecture while coaching multiple engineering teams.
 
 **BBC iPlayer** — Performance optimisation champion for one of the UK’s largest media platforms; later rebuilt a publication pipeline and partner integration supporting distribution to Virgin Media.
+
+**NZ Government (Cabinet Office / Catalyst IT)** — Technical lead on the engineering team delivering **CabNet**, the digital platform used by the New Zealand Cabinet for legislative workflow and document management.
+
+**NTT / Headforwards** — Architected and built components of NTT’s early enterprise cloud platform based on VMware vCloud Director.
 
 **Booking.com** — Early engineer helping professionalise the platform architecture, introducing structured code organisation and improving platform scalability during rapid growth.
 
 **Morgan Stanley** — Systems engineering on enterprise financial platforms.
+
+**ING Bank** — Built time-series and messaging systems supporting financial trading and market data platforms.
 
 ---
 

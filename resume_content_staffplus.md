@@ -1,68 +1,143 @@
 # Raf Gemmail
 
 Auckland, New Zealand  
-LinkedIn: rafgemmail  
-GitHub: rafgemmail
+LinkedIn: linkedin.com/in/rafiqgemmail  
+GitHub: github.com/fiq  
+InfoQ: infoq.com/profile/RafiqGemmail
+
+---
+
+# Header Tagline
+
+Staff-Level Engineering Leader — JVM Platforms, AWS Architecture and Developer Productivity
+
+---
+
+# Credibility Line
+
+Ex-Booking.com • BBC iPlayer • Morgan Stanley • ING • Stuff
 
 ---
 
 # Summary
 
-Senior engineer and engineering leader with more than twenty years of experience building and operating large-scale SaaS and consumer platforms. I work closely with engineers to improve system design, developer workflows and platform reliability.
+Hands-on engineering leader with deep experience designing and operating large-scale JVM platforms on AWS, including high-volume event-driven systems processing hundreds of millions of transactions.
 
-My focus is improving how engineering teams deliver software: measuring delivery friction, reducing operational toil and building strong platform foundations.
+I specialise in helping engineering teams deliver software more effectively through platform engineering, reliability improvements and developer experience optimisation. My background combines strong hands-on JVM development with leadership of distributed engineering teams operating high-scale cloud-native systems.
 
-I actively use and coach modern AI-assisted development approaches using tools such as Copilot, Cursor and Claude to support more effective engineering workflows.
+Earlier in my career I worked as a hands-on JVM engineer building large-scale systems for organisations including BBC iPlayer, Morgan Stanley, ING and Stuff.
+
+More recently I have focused on platform evolution, delivery metrics, cost efficiency and the pragmatic adoption of AI-assisted development workflows.
+
+Equally comfortable working directly with engineers on architecture and code as partnering with product and leadership to improve how organisations deliver software.
+
+---
+
+# Technical Leadership Focus
+
+- JVM platform engineering and distributed systems architecture
+- AWS cloud architecture across EKS, ECS, Lambda and event-driven systems
+- Improving developer productivity through platform engineering, automation and developer experience
+- Technical leadership of distributed teams operating high-scale production SaaS platforms
+- Pragmatic adoption of AI-assisted development tools and workflows
+- Cross-team architecture alignment using RFCs, ADRs and collaborative design sessions
 
 ---
 
 # Senior Director of Engineering  
-Marigold / Sailthru / Zeta Global  
+Marigold Loyalty / Sailthru (acquired by Zeta Global)  
 2022 – Present
 
-(Previously Director of Engineering for the Sailthru platform.)
+Technical leadership across large-scale SaaS platforms spanning loyalty, messaging and event-driven data systems.
 
-Engineering leadership across large-scale messaging and loyalty platforms used by global enterprise brands.
+- Lead distributed engineering teams across New Zealand and the Philippines delivering enterprise SaaS platforms used by global retail and hospitality brands.
+- Responsible for reliability, delivery and technical evolution of a high-scale loyalty platform processing hundreds of millions of real-time POS and ecommerce events.
+- Previously led engineering for the Sailthru messaging platform delivering billions of email, push, in-app and SMS messages weekly.
+- Work closely with engineers on system design, architecture evolution and incident management across JVM-based services and polyglot platform components.
+- Introduced engineering productivity measurement to quantify delivery friction across environments and developer workflows.
+- Used these metrics to prioritise platform improvements reducing developer toil and improving delivery predictability.
+- Led adoption of AI-assisted development workflows using Copilot, Cursor and Claude across engineering teams.
+- Act as senior technical escalation point for enterprise customers and production incidents.
 
-- Previously Director of Engineering for the Sailthru messaging platform delivering billions of email, push, in-app and SMS messages each week.
-- Lead engineering teams responsible for the Loyalty platform handling hundreds of millions of real-time events from POS systems and enterprise integrations.
-- Work closely with engineers on system design, reliability and platform improvements.
-- Introduced a structured approach to measuring engineering waste, including a Slack workflow capturing developer time lost to sandbox instability, environment drift and delivery friction.
-- Used this data to prioritise automation work and reduce developer toil.
-- Actively pair with engineers and coach teams in modern AI-assisted development workflows.
-- Supporting a major data platform modernisation initiative migrating to a managed cloud-native platform.
+Stack: Java, Scala, Rails, Elixir, Go, Python • AWS (EKS, ECS, Lambda) • Kafka • Terraform • Datadog • MongoDB • Redis • Elasticsearch • DynamoDB • Databricks
 
 ---
 
 # Head of Technology  
-Developers Institute
+Developers Institute  
+2020 – 2022
 
-Led engineering and platform development for a global coding education organisation.
+Promoted internally from Head of Product to lead engineering and platform delivery for a global coding education organisation.
 
-- Built platform engineering capability supporting international education programmes.
-- Contributed engineering and data expertise to development of a machine learning curriculum.
-- Established delivery and reliability practices for engineering teams.
+Scaled the organisation from single-digit cohorts to nearly 200 students while building the internal technology platform supporting global programmes.
 
----
+- Led transition of internal systems toward a data-driven SaaS architecture using AWS and infrastructure-as-code.
+- Implemented Terraform-based automation for internal systems including identity onboarding and platform provisioning.
+- Created an NZQA-approved workplace technology qualification integrating real engineering delivery with training.
+- Mentored and coached engineers and students in modern software engineering practices.
 
-# Earlier Career Highlights
+Seconded as Head of Technology for sister organisation **Parasol**, establishing enterprise delivery engagements.
 
-Stuff (Fairfax Media)  
-Technical lead helping transition New Zealand’s largest news site toward microservices and container-based architecture; introduced technology radar practices.
-
-BBC iPlayer  
-Performance optimisation champion for one of the UK’s largest media platforms; later rebuilt a publication pipeline and partner integration supporting distribution to Virgin Media.
-
-Booking.com  
-Early engineer helping professionalise the platform architecture and improve scalability during the company’s growth phase.
-
-Morgan Stanley  
-Systems engineering on enterprise financial platforms.
+- Authored the technical Statement of Work securing a multi-team engineering engagement with Northpower, a major New Zealand electricity provider.
+- Embedded teams with enterprise architects and developers and led technical onboarding and delivery alignment.
 
 ---
 
-# Technical Foundations
+# Earlier Technical Experience
 
-Extensive hands-on background across JVM ecosystems (Java and Spring) and dynamic languages, building distributed systems at scale.
+**Stuff (Fairfax Media)**  
+Technical lead guiding migration of New Zealand’s largest news platform toward microservices and containerised architecture while coaching multiple engineering teams.
 
-Experience spans platform engineering, infrastructure, DevOps practices and production systems. Long-time advocate of Agile and Extreme Programming practices emphasising fast feedback and continuous delivery.
+**BBC iPlayer**  
+Senior engineer focused on performance optimisation and event-driven publishing systems supporting one of the UK’s largest media platforms.
+
+**NZ Government (Cabinet Office / Catalyst IT)**  
+Technical lead on the engineering team delivering **CabNet**, the digital platform used by the New Zealand Cabinet for legislative workflow and document management.
+
+**NTT / Headforwards**  
+Architected and built components of NTT’s early enterprise cloud platform based on VMware vCloud Director.
+
+**Morgan Stanley**  
+Built high-performance ETL and messaging systems for financial market reference data platforms.
+
+**ING Bank**  
+Developed time-series data systems and integration services for trading platforms.
+
+**Booking.com**  
+Early engineer helping improve platform architecture and scalability during rapid company growth.
+
+---
+
+# Community & Industry Contribution
+
+Active contributor to the software engineering community.
+
+- Regular InfoQ contributor and host of Culture & Methods podcasts with industry leaders including Rebecca Parsons, Sandy Mamoli and Charity Majors.
+- Speaker at international engineering conferences including QCon London and NZ JS.
+- Organiser of New Zealand DevOpsDays (2016–2020).
+- Delivered workshops on Agile engineering, containerisation and modern Java development.
+
+---
+
+# Technical Expertise
+
+Languages  
+Java, Scala, Kotlin, Python, Ruby, Node.js
+
+Platform & Infrastructure  
+AWS (EKS, ECS, Lambda), Kubernetes, Terraform, CI/CD pipelines
+
+Architecture  
+Microservices, event-driven systems, platform engineering, reliability engineering
+
+Engineering Practices  
+TDD, BDD, ATDD, domain-driven design, continuous delivery, pair and mob programming
+
+---
+
+# Education
+
+BSc (Hons) Computer Science and Artificial Intelligence  
+University of Birmingham and University of Pisa
+
+ICAgile Certified Professional – Agile Coaching (ICP-ACC)

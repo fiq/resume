@@ -7,12 +7,19 @@
   "scripts": {
     "build:cto": "node scripts/regenerate-cto.mjs",
     "build:cto:docker": "docker build -t resume-print-fit . && docker run --rm -v \"$PWD:/work\" resume-print-fit pnpm build:cto",
+    "build:staffplus": "node scripts/regenerate-staffplus.mjs",
+    "build:staffplus:docker": "docker build -t resume-print-fit . && docker run --rm -v \"$PWD:/work\" resume-print-fit pnpm build:staffplus",
     "test": "pnpm test:print-fit",
     "test:cto": "pnpm build:cto && pnpm test:print-fit",
     "test:cto:docker": "docker build -t resume-print-fit . && docker run --rm -v \"$PWD:/work\" resume-print-fit pnpm test:cto",
+    "test:staffplus": "pnpm build:staffplus && pnpm test:print-fit:staffplus",
+    "test:staffplus:docker": "docker build -t resume-print-fit . && docker run --rm -v \"$PWD:/work\" resume-print-fit pnpm test:staffplus",
     "refresh:cto": "pnpm test:cto",
     "refresh:cto:docker": "docker build -t resume-print-fit . && docker run --rm -v \"$PWD:/work\" resume-print-fit pnpm refresh:cto",
+    "refresh:staffplus": "pnpm test:staffplus",
+    "refresh:staffplus:docker": "docker build -t resume-print-fit . && docker run --rm -v \"$PWD:/work\" resume-print-fit pnpm refresh:staffplus",
     "test:print-fit": "node scripts/print-fit-check.mjs",
+    "test:print-fit:staffplus": "node scripts/print-fit-check-staffplus.mjs",
     "test:print-fit:docker": "docker build -t resume-print-fit . && docker run --rm -v \"$PWD:/work\" resume-print-fit"
   },
   "devDependencies": {
