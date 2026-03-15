@@ -24,7 +24,7 @@
           shellHook = ''
             export PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1
             echo "Resume dev shell ready."
-            echo "Run: pnpm install && pnpm test:print-fit"
+            echo "Run: pnpm install && pnpm refresh:cto"
           '';
         };
       });

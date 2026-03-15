@@ -7,4 +7,4 @@ COPY scripts ./scripts
 
 RUN corepack enable && pnpm install --frozen-lockfile=false
 
-CMD ["pnpm", "test:print-fit"]
+CMD ["pnpm", "refresh:cto"]

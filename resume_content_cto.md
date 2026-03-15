@@ -21,12 +21,11 @@ Ex-Booking.com • BBC iPlayer • Morgan Stanley
 
 # Summary
 
-Engineering leader with proven success scaling high-growth SaaS platforms and leading globally distributed teams.
+Technically grounded engineering leader with a track record of scaling SaaS platforms generating eight-figure ARR and distributed engineering organisations.
 
-Currently leading engineering for a global loyalty SaaS platform processing hundreds of millions of real-time events and supporting major enterprise brands.
-Earlier leadership across the Sailthru platform included infrastructure delivering billions of email, push, in-app and SMS messages each week.
+Currently leading a 50+ engineer organisation for a global loyalty SaaS platform processing hundreds of millions of real-time events for major retail and hospitality brands.
 
-I build remote-first engineering cultures that sustain high delivery standards across time zones, combining strong technical leadership with pragmatic adoption of modern development practices including AI-assisted workflows.
+With almost a decade leading distributed teams, I build data-driven remote-first engineering cultures that sustain high delivery standards across time zones while pragmatically adopting AI-assisted and agentic development workflows.
 
 ---
 
@@ -34,28 +33,33 @@ I build remote-first engineering cultures that sustain high delivery standards a
 
 - Scaling distributed engineering teams delivering enterprise SaaS platforms used by global brands.
 - Measuring engineering productivity and identifying delivery friction to prioritise platform automation and developer experience improvements.
-- Leading adoption of AI-assisted development tools such as Copilot, Cursor and Claude across engineering teams.
-- Led adoption of AI-assisted development tools such as Copilot, Cursor and Claude across engineering teams to improve development workflows.
-- Operating at the intersection of hands-on engineering leadership, platform strategy and customer-facing technical leadership.
+- Pairing, coaching and leading adoption of AI-assisted development tools including Copilot, Cursor and Claude across engineering teams.
+- Operating at the intersection of hands-on engineering leadership, platform strategy, system design and customer-facing technical leadership.
+- Leading critical production incidents and post-incident reviews, driving platform stability improvements and stronger engineering ownership.
 
 ---
 
 # Senior Director of Engineering  
-Marigold / Sailthru / Zeta Global  
+Sailthru by Marigold / Zeta Global  
 2022 – Present
 
 (Previously Director of Engineering for the Sailthru platform. Promoted to Senior Director to lead engineering for the Marigold Loyalty product; continued role following acquisition by Zeta Global.)
 
-Head of engineering for the Marigold Loyalty platform, a global SaaS product generating $50M+ ARR and supporting major retail and hospitality brands.
+Head of engineering for the Loyalty platform, a global SaaS product generating > $50M+ ARR and supporting major retail and hospitality brands.
 
-- Lead engineering teams responsible for the Loyalty platform, handling hundreds of millions of real-time events from POS systems and enterprise integrations.
-- Previously led engineering for the Sailthru messaging platform, overseeing infrastructure delivering billions of email, push, in-app and SMS messages each week.
-- Lead distributed engineering teams across New Zealand and the Philippines operating in a remote-first SaaS engineering organisation.
-- Act as senior engineering contact for enterprise customers, including major client discussions, escalations and production incidents.
-- Lead a data platform modernisation programme from a third-party platform to a managed cloud-native solution expected to deliver multi-million dollar annual savings.
-- Introduced engineering productivity measurement across teams, capturing time lost to sandbox instability, environment drift and delivery friction, and using the data to prioritise automation and reduce toil.
-- Led adoption of AI-assisted development tools (Copilot, Cursor, Claude) across engineering teams to improve development workflows.
-- Supported internal champions and coached engineers in agentic development workflows.
+Responsible for engineering delivery, platform reliability and technical strategy for the Loyalty platform.
+
+- Lead distributed engineering teams of 50+ engineers and QA across New Zealand and the Philippines operating in a remote-first SaaS engineering organisation.
+- Engineering teams operate a global loyalty platform processing hundreds of millions of real-time events from POS systems and enterprise integrations.
+- Previously led platform and data engineering for the Sailthru messaging platform delivering billions of email, push, in-app and SMS messages each week for global retail and media brands.
+- Introduced Big Room Planning with Shape-Up style team involvement at Sailthru, improving Product–Engineering alignment and delivery predictability across multiple teams.
+- Formed a Staff+ enablement group and work closely alongside them to guide platform architecture, unblock teams and accelerate delivery.
+- Introduced engineering productivity measurement across teams, capturing delivery friction and identifying environment and sandbox issues reclaiming ~100 hours of developer time per month.
+- Led cultural shift from siloed delivery to shared engineering ownership by embedding QA earlier in development and aligning engineering and SRE around production responsibility.
+- Lead response and follow-up for critical production incidents, coordinating engineering teams and driving post-incident improvements in testing, rollout safety and platform stability.
+- Lead a data platform modernisation initiative moving from a third-party data platform to a managed AWS solution expected to deliver multi-million dollar annual savings.
+- Champion adoption of AI-assisted development across engineering and QA teams including Copilot, Cursor and Claude, establishing internal champions and evolving best practices for agentic development workflows.
+- Act as senior engineering contact for enterprise customers including production escalations and technical discussions with major global brands.
 
 ---
 
@@ -63,12 +67,22 @@ Head of engineering for the Marigold Loyalty platform, a global SaaS product gen
 Developers Institute  
 2020 – 2022
 
-Led engineering and technology delivery for a global coding education organisation.
+Promoted from Head of Product to lead engineering and technology delivery for an accredited tertiary education disruptor.
 
-- Built and led platform engineering capability supporting international education programmes.
-- Established delivery and reliability practices for engineering teams and broader technology operations.
-- Set technical direction across product, cloud platform and internal systems.
-- Contributed engineering and data expertise to development of a machine learning curriculum.
+Scaled the student base from single-digit cohorts to nearly 200 learners while building the internal technology platform supporting international programmes.
+
+- Led the transition of internal systems toward a more data-driven SaaS platform using infrastructure-as-code and repeatable engineering practices.
+- Introduced automation across internal systems including identity onboarding and platform operations using Terraform and infrastructure-as-code.
+- Built and led platform engineering capability supporting global education programmes and internal operational systems.
+- Created an NZQA-approved workplace technology qualification integrating real engineering delivery into student learning.
+- Mentored students through production engineering practices and helped place graduate engineers into industry roles.
+
+Seconded as Head of Technology for sister contracting organisation **Parasol**, responsible for establishing enterprise engineering placements and technical delivery.
+
+- Authored the technical Statement of Work (SoW) that secured a multi-team engineering engagement with Northpower, a major New Zealand electricity provider.
+- Embedded and supported engineering teams working inside enterprise environments, partnering with internal architects and developers.
+- Led technical onboarding (Sprint 0), platform setup and engineering practices for teams delivering in unfamiliar technology stacks including .NET.
+- Mentored engineers through enterprise delivery while developing polyglot engineering capabilities across multiple stacks.
 
 ---
 
@@ -78,7 +92,7 @@ Led engineering and technology delivery for a global coding education organisati
 
 **BBC iPlayer** — Performance optimisation champion for one of the UK’s largest media platforms; later rebuilt a publication pipeline and partner integration supporting distribution to Virgin Media.
 
-**Booking.com** — Early engineer helping professionalise the platform architecture and improve scalability during the company’s growth phase.
+**Booking.com** — Early engineer helping professionalise the platform architecture, introducing structured code organisation and improving platform scalability during rapid growth.
 
 **Morgan Stanley** — Systems engineering on enterprise financial platforms.
 
@@ -86,7 +100,7 @@ Led engineering and technology delivery for a global coding education organisati
 
 # Community & Industry Contributions
 
-Regular contributor to the global engineering community through podcasts, talks and technical education.
+Active contributor to the global engineering community through podcasts, talks and technical education.
 
 - InfoQ Culture & Methods annual podcasts with industry leaders including Sandy Mamoli, Rebecca Parsons, Jutta Eckstein and Charity Majors.
 - Speaker at international engineering events including QCon London and NZ JS.
@@ -99,7 +113,9 @@ Regular contributor to the global engineering community through podcasts, talks 
 
 Hands-on background across JVM ecosystems, dynamic languages and distributed systems built at scale.
 
-Experience spans platform engineering, infrastructure, DevOps and production systems, with long-term advocacy of Agile and Extreme Programming practices.
+Experience spans platform engineering, infrastructure, DevOps and production systems including cloud platforms, messaging systems, streaming data platforms and large-scale SaaS architectures.
+
+Long-time practitioner of Agile and Extreme Programming practices with a focus on developer productivity and engineering culture.
 
 ---
 

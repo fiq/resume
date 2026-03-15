@@ -13,15 +13,16 @@
     -webkit-print-color-adjust: exact;
     color-adjust: exact;
     background: #fff !important;
-    font-size: 13px;
+    font-size: 12px;
+    line-height: 1.18;
   }
 
   /* Container width only */
   .container-fluid {
     max-width: 210mm;
     margin: 0 auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   /* Remove shadows and unnecessary margins */
@@ -31,25 +32,24 @@
   }
 
   .content {
-    padding: 8px 9px;
+    padding: 6px 7px;
   }
 
   .sidebar-card {
-    padding: 7px 8px;
+    padding: 5px 6px;
   }
 
   .role-bullets li {
-    margin-bottom: 0.16rem;
+    margin-bottom: 0.08rem;
   }
 
-  /* Job blocks: avoid breaking inside */
   .job-block {
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: auto;
+    break-inside: auto;
   }
 
   /* Small spacing tweaks to prevent huge gaps */
-  .job-block + .job-block { margin-top: 4px; }
+  .job-block + .job-block { margin-top: 3px; }
 
   .role-heading {
     display: flex;
@@ -66,7 +66,7 @@
   .resume-layout {
     display: grid;
     grid-template-columns: 1.65fr 0.95fr;
-    gap: 10px;
+    gap: 8px;
     align-items: start;
   }
 
@@ -81,56 +81,96 @@
   }
 
   .intro {
-    padding-top: 4px;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 3px;
   }
 
   .profile-img {
-    width: 82px;
-    height: 82px;
-    margin: 0.2rem 0.45rem;
+    width: 72px;
+    height: 72px;
+    margin: 0.08rem 0.35rem;
   }
 
   .intro-title {
-    margin-bottom: 0.3rem !important;
-    font-size: 1rem;
-    line-height: 1.15;
+    margin-bottom: 0.2rem !important;
+    font-size: 0.96rem;
+    line-height: 1.12;
   }
 
   .intro-credibility {
-    margin: -0.2rem 0 0.3rem 0;
-    font-size: 0.8rem;
+    margin: -0.15rem 0 0.22rem 0;
+    font-size: 0.76rem;
   }
 
   .contact-list,
   .header-content .badge {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.04rem;
   }
 
   .role-note,
   .role-context,
+  .resume-main p,
   .sidebar-intro,
   .section-title {
-    margin-bottom: 0.22rem;
+    margin-bottom: 0.16rem;
+  }
+
+  .resume-main p,
+  .resume-main li {
+    font-size: 0.84rem;
+    line-height: 1.14;
   }
 
   .sidebar-card p,
   .sidebar-card li,
   .sidebar-list li {
-    font-size: 0.83rem;
-    line-height: 1.25;
+    font-size: 0.76rem;
+    line-height: 1.12;
   }
 
   .job-description {
-    font-size: 0.92rem;
+    font-size: 0.84rem;
   }
 
   .job-date {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
   }
 
   .education-list {
-    gap: 0.45rem;
+    gap: 0.25rem;
+  }
+
+  .role-section {
+    margin-bottom: 0.38rem;
+  }
+
+  .role-note,
+  .role-context,
+  .role-bullets li,
+  .education-item,
+  .contact-list,
+  .header-content .badge,
+  .section-title {
+    line-height: 1.18;
+  }
+
+  .role-bullets {
+    padding-left: 0.92rem;
+  }
+
+  .header-content .badge {
+    padding: 0.18rem 0.42rem;
+    font-size: 0.72rem;
+  }
+
+  #education {
+    margin-bottom: 0;
+  }
+
+  #summary p:last-child,
+  #experience .role-bullets:last-child,
+  #earlier-career .role-bullets:last-child {
+    margin-bottom: 0;
   }
 
   /* Lists */
