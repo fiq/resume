@@ -36,6 +36,17 @@ This repository contains a personal resume/CV site and several historical or alt
 - If the request mentions “latest”, check `cv/latest.html` and `cv/latest2.html` before assuming `one-pager` is the target.
 - If the request is about the landing page, inspect the root `index.html` and `cv/index.html`.
 
+## Script Workflow
+- Use repository scripts rather than manual regeneration when possible.
+- `pnpm build:cto` regenerates `cv/cto.html` from `resume_content_cto.md`.
+- `pnpm build:staffplus` regenerates `cv/index.html` from `resume_content_staffplus.md`.
+- `pnpm test:cto` runs CTO regeneration plus print-fit enforcement.
+- `pnpm test:staffplus` runs Staff+ regeneration plus render/page-count check.
+- `pnpm refresh:cto` and `pnpm refresh:staffplus` are the preferred full refresh aliases.
+- `pnpm refresh:all` refreshes both CV outputs in one pass.
+- Docker equivalents exist (`*:docker`), including `pnpm refresh:all:docker` for containerized rebuilds.
+- The Docker image default command runs `pnpm refresh:all`; pass an explicit command to run a narrower target.
+
 ## Verification
 - For HTML/CSS changes, inspect the affected files directly and sanity-check for broken structure, missing closing tags, and obvious selector issues.
 - For `cv/cto.html` changes that affect spacing or density, verify the print result when feasible. A headless Chrome print-to-PDF check is the preferred repeatable validation path in this repo.
