@@ -535,5 +535,23 @@ a[rel="noopener"] { outline: none; }
   }
 }
 
+@media print {
+  .resume-layout {
+    display: grid !important;
+    grid-template-columns: 1.65fr 0.95fr !important;
+    gap: 8px;
+    align-items: start;
+  }
+
+  .resume-main,
+  .resume-sidebar {
+    min-width: 0;
+  }
+
+  .resume-sidebar {
+    position: static !important;
+  }
+}
+
 
 /* END OF FILE ---------------------------------------------------- */

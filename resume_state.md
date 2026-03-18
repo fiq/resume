@@ -28,7 +28,8 @@ Required structural characteristics:
 - clear scale signals such as ARR, systems scale, customer scale, cost impact
 - icon-led header
 - highly scannable on mobile and desktop
-- no cluttered multi-column role history
+- executive two-column layout on desktop/print: main narrative column plus compact supporting sidebar
+- compact sidebar content only; no dense multi-column role history
 
 Do NOT:
 - use a timeline
@@ -183,13 +184,14 @@ Keep this concise and readable. No giant technology soup block.
 
 Critical layout requirements:
 - remove timeline layout completely
-- work history should be single column
-- mobile-first readability
+- keep work history in the main column only
+- preserve the supporting sidebar on desktop/print for compact sections such as leadership focus, community, and technical foundations
+- mobile-first readability, collapsing to one column on small screens
 - avoid wide date columns that break on phones
 - short bullets
 - consistent spacing
 - icon-led header
-- no dense two-column body layout for role content
+- do not let sidebar/supporting content overwhelm the main narrative
 
 Header can have:
 - name

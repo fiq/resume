@@ -10,6 +10,7 @@ This repository contains a personal resume/CV site and several historical or alt
 - `cv/cto.html` is the Head of Engineering / Director+ CV.
 - Use `resume_content_cto.md` as the content source of truth for `cv/cto.html` and `resume_state.md` as the structural/editorial guidance.
 - `cv/cto.html` uses an executive two-column layout: main narrative content on the left and compact supporting blocks in a right sidebar on desktop, collapsing to one column on mobile.
+- PDF export and print-fit checks are expected to preserve the desktop/two-column layout for `cv/cto.html`; treat a one-column PDF as a regression.
 - Optimise `cv/cto.html` for roughly two printed pages where possible by keeping header spacing tight, sidebar sections compact, and supporting content out of the main column.
 - Other HTML files in `cv/` are alternate resume versions, experiments, or older layouts. Treat them as references unless the user names a specific file.
 - Root-level PDFs are output artifacts or older exports. Do not edit binaries unless the user explicitly asks for regeneration or replacement.
@@ -38,8 +39,10 @@ This repository contains a personal resume/CV site and several historical or alt
 
 ## Script Workflow
 - Use repository scripts rather than manual regeneration when possible.
-- `pnpm build:cto` regenerates `cv/cto.html` from `resume_content_cto.md`.
-- `pnpm build:staffplus` regenerates `cv/index.html` from `resume_content_staffplus.md`.
+- `pnpm build:cto` regenerates `cv/cto.html` from `resume_content_cto.md` and exports `cv/cto.pdf`.
+- `pnpm build:staffplus` regenerates `cv/index.html` from `resume_content_staffplus.md` and exports `cv/staffplus.pdf`.
+- `pnpm export:pdf:cto` and `pnpm export:pdf:staffplus` export PDFs without regenerating markdown content.
+- The Playwright PDF export path uses a desktop viewport so generated PDFs keep desktop layout rather than mobile breakpoints.
 - `pnpm test:cto` runs CTO regeneration plus print-fit enforcement.
 - `pnpm test:staffplus` runs Staff+ regeneration plus render/page-count check.
 - `pnpm refresh:cto` and `pnpm refresh:staffplus` are the preferred full refresh aliases.
@@ -49,7 +52,7 @@ This repository contains a personal resume/CV site and several historical or alt
 
 ## Verification
 - For HTML/CSS changes, inspect the affected files directly and sanity-check for broken structure, missing closing tags, and obvious selector issues.
-- For `cv/cto.html` changes that affect spacing or density, verify the print result when feasible. A headless Chrome print-to-PDF check is the preferred repeatable validation path in this repo.
+- For `cv/cto.html` changes that affect spacing or density, verify the print result when feasible. A headless Chrome/Playwright print-to-PDF check via the Nix flake is the preferred repeatable validation path in this repo.
 - If a local preview is needed, use a simple static server such as `python3 -m http.server` from the repo root, only if the user needs it.
 - Mention when visual verification was not performed in a browser.
 
