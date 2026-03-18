@@ -69,15 +69,15 @@ Responsible for engineering delivery, platform reliability and technical strateg
 Developers Institute  
 2020 – 2022
 
-Promoted from Head of Product to lead engineering and technology delivery for an accredited tertiary education disruptor.
+Promoted from Head of Product to Head of Technology to lead engineering, platform strategy and delivery in a high-growth edtech environment.
 
-Scaled the student base from single-digit cohorts to nearly 200 learners while building the internal technology platform supporting international programmes.
+Scaled the platform and engineering organisation to support growth from single-digit cohorts to nearly 200 learners across international programmes.
 
-- Led the transition of internal systems toward a more data-driven SaaS platform using infrastructure-as-code and repeatable engineering practices.
-- Introduced automation across internal systems including identity onboarding and platform operations using Terraform and infrastructure-as-code.
+- Built and led a leadership layer of 6 Tech Leads reporting directly, with roughly 20 direct and indirect reports across platform and delivery teams.
+- Led in a junior-heavy environment where mentorship was central, establishing coaching rhythms and clear engineering expectations to lift delivery quality.
 - Built and led platform engineering capability supporting global education programmes and internal operational systems.
-- Created an NZQA-approved workplace technology qualification integrating real engineering delivery into student learning.
-- Mentored students through production engineering practices and helped place graduate engineers into industry roles.
+- Introduced automation across internal systems including identity onboarding and platform operations using Terraform and infrastructure-as-code.
+- Partnered with academic leadership to create an NZQA-approved workplace technology qualification integrating real engineering delivery into learner and graduate outcomes.
 
 Seconded as Head of Technology for sister contracting organisation **Parasol**, responsible for establishing enterprise engineering placements and technical delivery.
 
@@ -119,9 +119,11 @@ Active contributor to the global engineering community through podcasts, talks a
 
 # Technical Foundations
 
-Hands-on background across JVM ecosystems, dynamic languages and distributed systems built at scale.
+Hands-on background across JVM and AWS ecosystems, dynamic languages and distributed systems built at scale.
 
 Experience spans platform engineering, infrastructure, DevOps and production systems including cloud platforms, messaging systems, streaming data platforms and large-scale SaaS architectures.
+
+Domain leadership experience includes loyalty and martech, media, financial services, government platforms, education technology and energy/utilities.
 
 Long-time practitioner of Agile and Extreme Programming practices with a focus on developer productivity and engineering culture.
 
@@ -131,5 +133,3 @@ Long-time practitioner of Agile and Extreme Programming practices with a focus o
 
 BSc (Hons) Computer Science and Artificial Intelligence  
 University of Birmingham and University of Pisa
-
-ICAgile Certified Professional – Agile Coaching (ICP-ACC)
