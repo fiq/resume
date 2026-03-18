@@ -9,6 +9,7 @@ const cvPath = path.resolve(repoRoot, "cv", "cto.html");
 const outputDir = path.resolve(repoRoot, ".tmp");
 const pdfPath = path.resolve(outputDir, "cto-print-check.pdf");
 const maxPages = 2;
+const desktopViewport = { width: 1400, height: 1800 };
 
 function countPdfPages(pdfBuffer) {
   const matches = pdfBuffer.toString("latin1").match(/\/Type\s*\/Page(?!s)/g);
@@ -34,7 +35,9 @@ async function main() {
   });
 
   try {
-    const page = await browser.newPage();
+    const page = await browser.newPage({
+      viewport: desktopViewport
+    });
     await page.goto(pathToFileURL(cvPath).href, { waitUntil: "networkidle" });
     await page.pdf({
       path: pdfPath,
