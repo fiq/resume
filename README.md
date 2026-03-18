@@ -61,22 +61,27 @@ pnpm refresh:staffplus
 - `pnpm test:staffplus`: regenerate and run the Staff+ render check
 - `pnpm refresh:cto`: alias for the full CTO refresh path
 - `pnpm refresh:staffplus`: alias for the full Staff+ refresh path
+- `pnpm refresh:all`: refresh both CV outputs in one pass
 - `pnpm test:print-fit`: run only the print-fit check against `cv/cto.html`
 - `pnpm test:print-fit:staffplus`: run only the render/page-count check against `cv/index.html`
 
 ## Docker Workflow
 
-Containerized CTO refresh:
+Containerized refreshes:
 
 ```sh
 docker build -t resume-print-fit .
-docker run --rm -v "$PWD:/work" resume-print-fit
+docker run --rm -v "$PWD:/work" resume-print-fit pnpm refresh:cto
+docker run --rm -v "$PWD:/work" resume-print-fit pnpm refresh:staffplus
+docker run --rm -v "$PWD:/work" resume-print-fit pnpm refresh:all
 ```
 
 Or, if `pnpm` is available on the host:
 
 ```sh
 pnpm refresh:cto:docker
+pnpm refresh:staffplus:docker
+pnpm refresh:all:docker
 ```
 
 ## Browser Preview
