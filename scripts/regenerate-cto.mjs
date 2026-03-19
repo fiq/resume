@@ -421,7 +421,7 @@ function buildHtml(sections) {
     <title>${escapeHtml(contact.name)} - Engineering Leader (Remote / Distributed Teams)</title>
   </head>
 
-  <body>
+  <body class="resume-cv resume-cto">
     <header class="container-fluid intro">
       <div class="d-flex flex-column flex-md-row align-items-center">
         <img
