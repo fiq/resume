@@ -83,6 +83,32 @@ Seconded as Head of Technology for sister organisation **Parasol**, establishing
 
 ---
 
+# Senior Technical Consultant (DevOps)  
+Assurity Consulting (clients incl. NZQA)  
+February 2020 – November 2020
+
+Hands-on consulting role spanning DevOps, testing and delivery coaching for enterprise and government teams.
+
+- Consulted on BDD and ATDD adoption, pairing with analysts and engineers to create self-validating specifications and stronger testing feedback loops.
+- Built Spring Cloud Function and AWS Lambda prototypes while helping teams move away from monolithic patterns toward smaller, testable services.
+- Used Concordion-based specification by example to connect business language, documentation and executable tests.
+- Delivered remote coaching, workshops and technical enablement across DevOps, containerisation and engineering practice during the first COVID lockdown period.
+
+---
+
+# Agile and Technical Consultant  
+MPorium  
+July 2018 – January 2019
+
+Contracted as a hands-on technical and agile coach for a scaling product company working on an AWS, Java, Scala and Python stack.
+
+- Split time between direct delivery and technical coaching, contributing to ad optimisation work across Spark, Storm, Spring Boot and Angular services.
+- Ran test strategy workshops, domain modelling sessions and engineering coaching to help teams work through scale-up complexity and delivery risk.
+- Worked with product owners and engineers on hypothesis-driven development and specification by example.
+- Partnered with the incoming CTO on rebooting team working agreements, backlogs and Sprint Zero planning.
+
+---
+
 # Earlier Technical Experience
 
 **Stuff (Fairfax Media)**  
