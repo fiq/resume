@@ -452,7 +452,7 @@ function buildHtml(sections) {
     <title>${escapeHtml(contact.name)} - Senior Technical Leadership CV</title>
   </head>
 
-  <body>
+  <body class="resume-staffplus">
     <header class="container-fluid intro">
       <div class="d-flex flex-column flex-md-row align-items-center">
         <img

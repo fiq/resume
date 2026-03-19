@@ -195,6 +195,51 @@
     padding-left: 1rem;
   }
 
+  .resume-staffplus .job-block + .job-block {
+    margin-top: 4px;
+    padding-top: 4px;
+    border-top: 1px solid rgba(68,68,68,0.14);
+  }
+
+  .resume-staffplus .job-description {
+    font-size: 0.86rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  .resume-staffplus .job-employer,
+  .resume-staffplus a.job-employer {
+    font-size: 0.75rem;
+    color: #1a8fb0;
+  }
+
+  .resume-staffplus .job-date {
+    font-size: 0.68rem;
+    color: #767676;
+    font-weight: 500;
+  }
+
+  .resume-staffplus .role-context {
+    color: #575757;
+    margin-bottom: 0.18rem;
+  }
+
+  .resume-staffplus #experience .role-bullets li {
+    margin-bottom: 0.1rem;
+  }
+
+  .resume-staffplus #earlier-career .role-bullets li {
+    margin-bottom: 0.16rem;
+  }
+
+  .resume-staffplus #summary p {
+    margin-bottom: 0.26rem;
+  }
+
+  .resume-staffplus #summary p:last-child {
+    margin-bottom: 0;
+  }
+
 }
 
 
@@ -416,6 +461,50 @@ a.job-employer {
   font-size: 0.85rem;
   margin-top: 6px;
   color: #666;
+}
+
+/* STAFF+/IC CV POLISH ------------------------------------------- */
+.resume-staffplus #experience .section-title,
+.resume-staffplus #earlier-career .section-title {
+  margin-bottom: 0.55rem;
+}
+
+.resume-staffplus .job-block + .job-block {
+  margin-top: 0.55rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid rgba(34,192,232,0.16);
+}
+
+.resume-staffplus .job-description {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.resume-staffplus .job-employer,
+.resume-staffplus a.job-employer {
+  display: block;
+  font-size: 0.84rem;
+  color: #1a8fb0;
+}
+
+.resume-staffplus .job-date {
+  color: #6f7a82;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.resume-staffplus .role-context {
+  color: #555;
+  margin-bottom: 0.22rem;
+}
+
+.resume-staffplus .role-bullets li {
+  color: #4f4f4f;
+}
+
+.resume-staffplus #earlier-career .role-bullets li {
+  margin-bottom: 0.28rem;
 }
 
 /* SKILLS / BADGES ------------------------------------------------ */
