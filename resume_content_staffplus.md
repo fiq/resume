@@ -21,11 +21,9 @@ Ex-Booking.com • BBC iPlayer • Morgan Stanley • ING • Stuff
 
 # Summary
 
-Hands-on engineering leader with deep experience designing and operating large-scale JVM platforms on AWS, including high-volume event-driven systems processing hundreds of millions of transactions.
+Hands-on engineering leader with deep experience building and operating large-scale SaaS platforms and distributed systems across Java, Scala, Python, Ruby, Node.js and Elixir ecosystems. Experienced in high-volume event-driven and fullstack systems processing billions of transactions, I have built robust systems for organisations including BBC iPlayer, Morgan Stanley, ING and Stuff.
 
-I specialise in helping engineering teams deliver software more effectively through platform engineering, reliability improvements and developer experience optimisation. My background combines strong hands-on JVM development with leadership of distributed engineering teams operating high-scale cloud-native systems.
-
-Earlier in my career I worked as a hands-on JVM engineer building large-scale systems for organisations including BBC iPlayer, Morgan Stanley, ING and Stuff.
+I am versed in helping engineering teams deliver software more effectively through platform engineering, reliability improvements and developer experience optimisation. My background combines strong hands-on JVM and polyglot development with leadership of distributed engineering teams operating high-scale cloud-native systems.
 
 More recently I have focused on platform evolution, delivery metrics, cost efficiency and the pragmatic adoption of AI-assisted development workflows.
 
@@ -118,7 +116,7 @@ Technical lead guiding migration of New Zealand’s largest news platform toward
 Senior engineer focused on performance optimisation and event-driven publishing systems supporting one of the UK’s largest media platforms.
 
 **NZ Government (Cabinet Office / Catalyst IT)**  
-Technical lead on the engineering team delivering **CabNet**, the digital platform used by the New Zealand Cabinet for legislative workflow and document management.
+Agile project lead, Scrum Master and technical lead for **CabNet**, working directly with New Zealand's Cabinet Secretary and ministers on the digital platform used by Cabinet for legislative workflow and document management.
 
 **NTT / Headforwards**  
 Architected and built components of NTT’s early enterprise cloud platform based on VMware vCloud Director.

@@ -94,7 +94,7 @@ Seconded as Head of Technology for sister contracting organisation **Parasol**, 
 
 **BBC iPlayer** — Performance optimisation champion for one of the UK’s largest media platforms; later rebuilt a publication pipeline and partner integration supporting distribution to Virgin Media.
 
-**NZ Government (Cabinet Office / Catalyst IT)** — Technical lead on the engineering team delivering **CabNet**, the digital platform used by the New Zealand Cabinet for legislative workflow and document management.
+**NZ Government (Cabinet Office / Catalyst IT)** — Agile project lead, Scrum Master and technical lead for **CabNet**, working directly with New Zealand's Cabinet Secretary and ministers on the digital platform used by Cabinet for legislative workflow and document management.
 
 **NTT / Headforwards** — Architected and built components of NTT’s early enterprise cloud platform based on VMware vCloud Director.
 
